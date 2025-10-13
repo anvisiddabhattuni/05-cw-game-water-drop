@@ -10,13 +10,28 @@
     <div class="game-wrapper">
         <h1 class="game-title">Water Drop</h1>
         <p class="game-tagline">Catch the good drops, avoid the bad ones!</p>
-        <div class="score-panel">
+    <div class="score-panel">
+            <div class="level-select">
+                <label for="level">Level:</label>
+                <select id="level">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="extreme">Extreme</option>
+                </select>
+            </div>
             <div class="score">Score: <span id="score">0</span></div>
+            <div class="win-score">Win Score: <span id="win-score">15</span></div>
             <div class="timer">Time: <span id="time">30</span>s</div>
             <button id="start-btn">Start Game</button>
+            <button id="reset-btn">Reset</button>
         </div>
         
         <div id="game-container">
+            <!-- Interactive can for bonus points -->
+            <img src="img/water-can.png" id="water-can" alt="Water Can" style="display:none; position:absolute; bottom:20px; left:50%; transform:translateX(-50%); width:70px; cursor:pointer; z-index:10;" />
+            <!-- Confetti effect container -->
+            <div id="confetti-container"></div>
         </div>
     </div>
     
