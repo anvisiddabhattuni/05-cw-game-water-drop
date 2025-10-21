@@ -1,3 +1,26 @@
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 18px 0 10px 0;
+    background: #2E9DF7;
+    color: #fff;
+    font-size: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    box-shadow: 0 -2px 8px rgba(46,157,247,0.08);
+}
+.footer a {
+    color: #FFC907;
+    text-decoration: underline;
+    margin: 0 6px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.footer a:hover {
+    color: #FF902A;
+}
 .win-score {
     font-size: 1rem;
     color: #4FCB53;
@@ -79,7 +102,10 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', 'Avenir', Arial, sans-serif;
+}
+.game-title, .game-tagline, .score, .timer, .win-score, .footer, .level-select label, #start-btn, #reset-btn {
+    font-family: 'Montserrat', 'Avenir', Arial, sans-serif;
 }
 
 .game-wrapper {

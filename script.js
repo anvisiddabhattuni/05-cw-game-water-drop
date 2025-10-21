@@ -1,3 +1,12 @@
+// Milestone messages
+const milestones = [
+  { score: 5, message: "Great start!" },
+  { score: 10, message: "Halfway there!" },
+  { score: 15, message: "Keep going!" },
+  { score: 20, message: "Amazing!" },
+  { score: 30, message: "Water Hero!" }
+];
+let reachedMilestones = new Set();
 // Variables to control game state
 
 let gameRunning = false;
